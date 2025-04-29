@@ -59,21 +59,30 @@
     margin-bottom: 10px;
   }
   
-  .skills-list {
-    list-style: none;
+  /* Card Styles */
+  .card-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
   
-  .skills-list li {
+  .card {
     background: #e2e2e2;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .project-item, .experience-item, .education-item {
-    margin-bottom: 15px;
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skill-card {
+    text-align: center;
+    font-weight: bold;
   }
   
   footer {
@@ -82,5 +91,12 @@
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
   }
   
