@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anay Ghatpande | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -12,27 +12,29 @@
   <header class="app-bar">
     <div class="container">
       <h1>Anay Ghatpande</h1>
-      <p>Software Engineer • Developer • AGV + MQTT + ROS2</p>
+      <p class="subtitle">Software Engineer • Developer • AGV + MQTT + ROS2</p>
     </div>
   </header>
 
   <main class="container">
-    <section class="card" data-animate>
+    <section class="card about-me">
       <h2>About Me</h2>
       <p>I’m a robotics + software enthusiast blending web tech, automation, and AGV systems. I work on MQTT, ROS2, Node-RED, and industrial integration using RevPi, Docker, and C#.</p>
     </section>
 
-    <section class="card-grid">
-      <div class="card" data-animate>
-        <h3 class="material-icons">build Projects</h3>
+    <div class="card-grid">
+      <div class="card projects">
+        <h3 class="material-icons">build</h3>
+        <h4>Projects</h4>
         <ul>
           <li><strong>AGV Dashboard:</strong> Flask + MQTT + JS map</li>
           <li><strong>ROS2 Bridge:</strong> Humble ↔ Node-RED</li>
           <li><strong>Custom Nav Stack:</strong> TurtleBot3 + Gazebo</li>
         </ul>
       </div>
-      <div class="card" data-animate>
-        <h3 class="material-icons">work Experience</h3>
+      <div class="card experience">
+        <h3 class="material-icons">work</h3>
+        <h4>Work Experience</h4>
         <p><strong>RevPi Integrations (2023 - Present)</strong></p>
         <ul>
           <li>Door control via MQTT I/O → AGV REST</li>
@@ -40,19 +42,22 @@
           <li>Automated WSL2 ROS2 setups</li>
         </ul>
       </div>
-      <div class="card" data-animate>
-        <h3 class="material-icons">code Skills</h3>
-        <div class="chip">Python</div>
-        <div class="chip">Docker</div>
-        <div class="chip">C#</div>
-        <div class="chip">Node-RED</div>
-        <div class="chip">ROS2</div>
-        <div class="chip">Ansible</div>
-        <div class="chip">Flask</div>
+      <div class="card skills">
+        <h3 class="material-icons">code</h3>
+        <h4>Skills</h4>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Docker</span>
+          <span class="chip">C#</span>
+          <span class="chip">Node-RED</span>
+          <span class="chip">ROS2</span>
+          <span class="chip">Ansible</span>
+          <span class="chip">Flask</span>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="card" data-animate>
+    <section class="card contact">
       <h2>Contact</h2>
       <p><span class="material-icons">email</span> anay@example.com</p>
       <p><span class="material-icons">link</span> <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">LinkedIn</a></p>
@@ -65,8 +70,7 @@
   </footer>
 
   <script>
-    // Animate cards when they enter view
-    document.querySelectorAll('[data-animate]').forEach(card => {
+    document.querySelectorAll('.card').forEach(card => {
       card.classList.add('hidden');
       const observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
