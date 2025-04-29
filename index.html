@@ -2,92 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anay Ghatpande | Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
+  <header class="app-bar">
     <div class="container">
-      <img src="images/profile.jpg" alt="Anay Ghatpande" class="profile-img"/>
       <h1>Anay Ghatpande</h1>
-      <p>Software Engineer | Web Developer | Tech Enthusiast</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <p>Software Engineer • Developer • AGV + MQTT + ROS2</p>
     </div>
   </header>
 
   <main class="container">
-    <!-- About Section -->
-    <section id="about">
+    <section class="card" data-animate>
       <h2>About Me</h2>
-      <p>
-        I'm a passionate software engineer with a strong foundation in web development and a keen interest in building scalable applications. I thrive in collaborative environments and am always eager to learn new technologies.
-      </p>
+      <p>I’m a robotics + software enthusiast blending web tech, automation, and AGV systems. I work on MQTT, ROS2, Node-RED, and industrial integration using RevPi, Docker, and C#.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>A personal portfolio website to showcase my projects and skills.</p>
-          <a href="https://github.com/anayghatpande/portfolio" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more project cards as needed -->
+    <section class="card-grid">
+      <div class="card" data-animate>
+        <h3 class="material-icons">build Projects</h3>
+        <ul>
+          <li><strong>AGV Dashboard:</strong> Flask + MQTT + JS map</li>
+          <li><strong>ROS2 Bridge:</strong> Humble ↔ Node-RED</li>
+          <li><strong>Custom Nav Stack:</strong> TurtleBot3 + Gazebo</li>
+        </ul>
+      </div>
+      <div class="card" data-animate>
+        <h3 class="material-icons">work Experience</h3>
+        <p><strong>RevPi Integrations (2023 - Present)</strong></p>
+        <ul>
+          <li>Door control via MQTT I/O → AGV REST</li>
+          <li>Dockerized Node-RED pipelines (offline)</li>
+          <li>Automated WSL2 ROS2 setups</li>
+        </ul>
+      </div>
+      <div class="card" data-animate>
+        <h3 class="material-icons">code Skills</h3>
+        <div class="chip">Python</div>
+        <div class="chip">Docker</div>
+        <div class="chip">C#</div>
+        <div class="chip">Node-RED</div>
+        <div class="chip">ROS2</div>
+        <div class="chip">Ansible</div>
+        <div class="chip">Flask</div>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Software Engineer at XYZ Corp</h3>
-          <p><em>Jan 2023 – Present</em></p>
-          <ul>
-            <li>Developed and maintained web applications using React and Node.js.</li>
-            <li>Collaborated with cross-functional teams to define and implement new features.</li>
-            <li>Optimized application performance, reducing load times by 30%.</li>
-          </ul>
-        </div>
-        <!-- Add more experience cards as needed -->
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card-container">
-        <div class="card skill-card">JavaScript</div>
-        <div class="card skill-card">React.js</div>
-        <div class="card skill-card">Node.js</div>
-        <div class="card skill-card">HTML5 & CSS3</div>
-        <div class="card skill-card">Git & GitHub</div>
-        <div class="card skill-card">RESTful APIs</div>
-        <!-- Add more skill cards as needed -->
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
+    <section class="card" data-animate>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:anay@example.com">anay@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">linkedin.com/in/anayghatpande</a></p>
-      <p>GitHub: <a href="https://github.com/anayghatpande" target="_blank">github.com/anayghatpande</a></p>
+      <p><span class="material-icons">email</span> anay@example.com</p>
+      <p><span class="material-icons">link</span> <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">LinkedIn</a></p>
+      <p><span class="material-icons">code</span> <a href="https://github.com/anayghatpande" target="_blank">GitHub</a></p>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Anay Ghatpande. All rights reserved.</p>
-    </div>
+  <footer class="footer">
+    <p>© 2025 Anay Ghatpande</p>
   </footer>
+
+  <script>
+    // Animate cards when they enter view
+    document.querySelectorAll('[data-animate]').forEach(card => {
+      card.classList.add('hidden');
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          card.classList.add('show');
+          observer.disconnect();
+        }
+      });
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
