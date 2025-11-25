@@ -176,11 +176,11 @@ particlesJS('particles-js', {
 // ===================================
 const typedTextSpan = document.querySelector('.typed-text');
 const textArray = [
-    'Automation Engineer',
-    'Safety Systems Expert',
-    'PLC Programmer',
-    'Industrial IoT Specialist',
-    'Functional Safety Professional'
+    'Robotics Engineer',
+    'AMR Specialist',
+    'Collaborative Robotics Expert',
+    'ROS Developer',
+    'AI/ML Enthusiast'
 ];
 const typingDelay = 100;
 const erasingDelay = 50;
