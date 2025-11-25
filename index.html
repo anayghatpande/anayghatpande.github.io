@@ -3,82 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anay Ghatpande - Portfolio | Automation Engineer & Safety Systems Specialist">
-    <title>Anay Ghatpande | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Anay Ghatpande - Automation Engineer | Safety Systems Specialist | Industrial IoT Expert">
+    <meta name="keywords" content="Automation, PLd Sensors, ISO 13849, Industrial Safety, PLC Programming">
+    <meta name="author" content="Anay Ghatpande">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Anay Ghatpande - Automation Engineer Portfolio">
+    <meta property="og:description" content="Specialized in Industrial Safety Systems, PLd Sensors, and Automation">
+    <meta property="og:type" content="website">
+    
+    <title>Anay Ghatpande | Automation Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Anay Ghatpande</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                AG
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="Anay Ghatpande">Anay Ghatpande</h1>
-            <p class="tagline">Automation Engineer | Safety Systems Specialist | Industrial IoT</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <p class="hero-subtitle">Hi, I'm</p>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Anay Ghatpande</span>
+                </h1>
+                <div class="hero-description">
+                    <h2 class="typing-text">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+                </div>
+                <p class="hero-text">
+                    Automation Engineer specializing in <span class="highlight">Industrial Safety Systems</span>, 
+                    <span class="highlight">PLd Sensors</span>, and <span class="highlight">Functional Safety Standards</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/docs/resume.pdf" class="btn btn-secondary" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/anayghatpande" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:anay@example.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/anayghatpande" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/anayghatpande" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/anayghatpande" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <img src="assets/img/profile.jpg" alt="Anay Ghatpande">
+                    <div class="image-glow"></div>
+                </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about section" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Anay Ghatpande">
+                <div class="about-info" data-aos="fade-right">
+                    <div class="about-card glass-card">
+                        <h3>Who am I?</h3>
+                        <p>
+                            I'm a passionate <strong>Automation Engineer</strong> with extensive experience in 
+                            designing and implementing industrial safety systems. My expertise lies in 
+                            <strong>PLd/PLe sensor systems</strong>, <strong>ISO 13849</strong> compliance, 
+                            and creating robust safety architectures for manufacturing environments.
+                        </p>
+                        <p>
+                            With a strong foundation in <strong>PLC programming</strong>, <strong>industrial networks</strong>, 
+                            and <strong>functional safety standards</strong>, I bridge the gap between engineering excellence 
+                            and workplace safety. I'm committed to creating systems that not only meet regulatory requirements 
+                            but exceed them.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="stat-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="5">0</h4>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="25">0</h4>
+                                    <p>Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="stat-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="12">0</h4>
+                                    <p>Certifications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p class="lead">
-                        Passionate automation engineer specializing in industrial safety systems, 
-                        sensor technology, and functional safety standards (ISO 13849, IEC 62061).
-                    </p>
-                    <p>
-                        With expertise in PLd sensor systems, machine safety, and industrial automation,
-                        I design and implement safety-critical control systems that protect people and 
-                        optimize manufacturing processes.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Years Experience</span>
+
+                <div class="about-interests" data-aos="fade-left">
+                    <div class="interests-grid">
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Safety First</h4>
+                            <p>Implementing ISO 13849, IEC 62061 compliant systems</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">Projects Completed</span>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Automation</h4>
+                            <p>PLC, SCADA, and robotic system integration</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Certifications</span>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4>Industrial IoT</h4>
+                            <p>Connected devices and smart manufacturing</p>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Programming</h4>
+                            <p>Python, C++, Ladder Logic, Structured Text</p>
                         </div>
                     </div>
                 </div>
@@ -87,302 +223,772 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills section" id="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My technical expertise and proficiencies</p>
+            </div>
+
+            <div class="skills-wrapper">
                 <!-- Safety Systems -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Safety Systems</h3>
-                    <ul>
-                        <li>ISO 13849-1/2 (PLd/PLe)</li>
-                        <li>IEC 62061 (SIL 2/3)</li>
-                        <li>Safety Sensors & Interlocks</li>
-                        <li>Risk Assessment</li>
-                        <li>SISTEMA Software</li>
-                    </ul>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-shield-alt"></i>
+                        Safety Systems & Standards
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ISO 13849-1/2 (PLd/PLe)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">IEC 62061 (SIL 2/3)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Safety Sensors & Interlocks</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SISTEMA Software</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Risk Assessment (ISO 12100)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Automation -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>Automation</h3>
-                    <ul>
-                        <li>PLC Programming (Siemens, Allen-Bradley)</li>
-                        <li>HMI/SCADA</li>
-                        <li>Industrial Networks (Profinet, EtherNet/IP)</li>
-                        <li>Servo & Motion Control</li>
-                        <li>Robotics Integration</li>
-                    </ul>
+                <!-- Automation & Control -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        Automation & Control Systems
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Siemens TIA Portal (S7-1200/1500)</span>
+                                <span class="skill-percentage">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Allen-Bradley (Studio 5000)</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HMI/SCADA Development</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Industrial Networks (Profinet, EtherNet/IP)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Servo & Motion Control</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Programming -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-code"></i></div>
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C/C++</li>
-                        <li>Ladder Logic (LAD)</li>
-                        <li>Structured Text (ST)</li>
-                        <li>MATLAB/Simulink</li>
-                    </ul>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming & Software
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C/C++</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Ladder Logic (LAD)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Structured Text (ST)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MATLAB/Simulink</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Tools & Software -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Tools & Software</h3>
-                    <ul>
-                        <li>TIA Portal</li>
-                        <li>Studio 5000</li>
-                        <li>AutoCAD Electrical</li>
-                        <li>EPLAN</li>
-                        <li>Git/GitHub</li>
-                    </ul>
-                </div>
-
-                <!-- Industrial IoT -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Industrial IoT</h3>
-                    <ul>
-                        <li>OPC UA</li>
-                        <li>MQTT</li>
-                        <li>Edge Computing</li>
-                        <li>Data Analytics</li>
-                        <li>Cloud Integration (AWS IoT)</li>
-                    </ul>
-                </div>
-
-                <!-- Standards & Compliance -->
-                <div class="skill-category">
-                    <div class="category-icon"><i class="fas fa-file-contract"></i></div>
-                    <h3>Standards</h3>
-                    <ul>
-                        <li>Machinery Directive 2006/42/EC</li>
-                        <li>ANSI B11 Series</li>
-                        <li>NFPA 79</li>
-                        <li>UL 508A</li>
-                        <li>CE Marking</li>
-                    </ul>
+                <!-- Tools & Technologies -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge"><i class="fas fa-file-alt"></i> AutoCAD Electrical</span>
+                        <span class="tech-badge"><i class="fas fa-drafting-compass"></i> EPLAN</span>
+                        <span class="tech-badge"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+                        <span class="tech-badge"><i class="fas fa-cloud"></i> OPC UA</span>
+                        <span class="tech-badge"><i class="fas fa-share-alt"></i> MQTT</span>
+                        <span class="tech-badge"><i class="fab fa-aws"></i> AWS IoT</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> SQL</span>
+                        <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-badge"><i class="fas fa-chart-line"></i> Data Analytics</span>
+                        <span class="tech-badge"><i class="fas fa-server"></i> Edge Computing</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section class="experience section" id="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+
             <div class="timeline">
-                <!-- Experience Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2021 - Present</div>
-                        <h3>Senior Automation Engineer</h3>
-                        <h4>Company Name</h4>
-                        <ul>
-                            <li>Designed and implemented PLd safety systems for automotive manufacturing lines</li>
-                            <li>Conducted risk assessments per ISO 12100 and validated safety functions</li>
-                            <li>Led team of 5 engineers in retrofitting legacy equipment with modern safety controls</li>
-                            <li>Reduced machine downtime by 30% through predictive maintenance implementations</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>ISO 13849</span>
-                            <span>Siemens S7-1500</span>
-                            <span>Safety Light Curtains</span>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Senior Automation Engineer</h3>
+                            <span class="company">ABC Manufacturing Solutions</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                Jan 2021 - Present
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Designed and implemented PLd/PLe safety systems for automotive manufacturing lines, 
+                                    ensuring compliance with ISO 13849-1 and reducing safety-related incidents by 45%
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Led team of 5 engineers in retrofitting 15+ legacy equipment with modern safety controls, 
+                                    completing projects 20% under budget
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Conducted comprehensive risk assessments per ISO 12100 and validated safety functions 
+                                    using SISTEMA software
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Reduced machine downtime by 30% through implementation of predictive maintenance 
+                                    systems using OPC UA and cloud analytics
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>ISO 13849</span>
+                                <span>Siemens S7-1500</span>
+                                <span>Safety Light Curtains</span>
+                                <span>SISTEMA</span>
+                                <span>OPC UA</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Experience Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <h3>Automation Engineer</h3>
-                        <h4>Company Name</h4>
-                        <ul>
-                            <li>Programmed PLCs for packaging and material handling systems</li>
-                            <li>Integrated safety sensors and emergency stop circuits per ANSI standards</li>
-                            <li>Developed HMI interfaces for operator control and diagnostics</li>
-                            <li>Performed FAT/SAT and commissioning of automated systems</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>Allen-Bradley</span>
-                            <span>HMI/SCADA</span>
-                            <span>Industrial Networks</span>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Automation Engineer</h3>
+                            <span class="company">XYZ Industrial Automation</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                Jun 2019 - Dec 2020
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Programmed PLCs for packaging and material handling systems processing 500+ units/hour
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Integrated safety sensors and emergency stop circuits per ANSI B11 standards across 
+                                    20+ production lines
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed intuitive HMI interfaces reducing operator training time by 40%
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Performed FAT/SAT and commissioning of automated systems in 3 countries
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Allen-Bradley</span>
+                                <span>HMI/SCADA</span>
+                                <span>Profinet</span>
+                                <span>Safety PLCs</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Add more experience items as needed -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Junior Automation Engineer</h3>
+                            <span class="company">DEF Engineering Services</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                Jul 2018 - May 2019
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Assisted in design and implementation of control systems for conveyor systems
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Created electrical schematics using AutoCAD Electrical and EPLAN
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Performed troubleshooting and maintenance of existing automation systems
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Documented safety procedures and maintenance manuals
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>PLC Programming</span>
+                                <span>AutoCAD</span>
+                                <span>Troubleshooting</span>
+                                <span>Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section class="projects section" id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="safety">Safety Systems</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="iot">Industrial IoT</button>
+            </div>
+
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card glass-card" data-category="safety" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
-                        <img src="images/projects/project1.jpg" alt="Safety System Design">
+                        <img src="assets/img/projects/safety-system.jpg" alt="PLd Safety System">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>PLd Safety System Design</h3>
-                        <p>Complete safety system design for CNC machining center meeting ISO 13849-1 PLd requirements</p>
-                        <div class="tech-tags">
-                            <span>ISO 13849</span>
-                            <span>SISTEMA</span>
-                            <span>Safety Interlocks</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>PLd Safety System for CNC Machining Center</h3>
+                            <span class="project-category">Safety Systems</span>
                         </div>
-                        <a href="#" class="project-details">View Details →</a>
+                        <p class="project-description">
+                            Complete safety system design meeting ISO 13849-1 PLd requirements with Category 3 architecture. 
+                            Implemented safety door interlocks, light curtains, and emergency stop circuits with diagnostic coverage >90%.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> ISO 13849-1</span>
+                            <span><i class="fas fa-circle"></i> SISTEMA</span>
+                            <span><i class="fas fa-circle"></i> Safety PLCs</span>
+                            <span><i class="fas fa-circle"></i> Cat 3</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card glass-card" data-category="automation" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
-                        <img src="images/projects/project2.jpg" alt="Automated Production Line">
+                        <img src="assets/img/projects/assembly-line.jpg" alt="Automated Assembly Line">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Automated Production Line</h3>
-                        <p>Full automation of assembly line with integrated vision systems and robotics</p>
-                        <div class="tech-tags">
-                            <span>Siemens PLC</span>
-                            <span>Robotics</span>
-                            <span>Vision Systems</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Automated Assembly Line with Vision System</h3>
+                            <span class="project-category">Automation</span>
                         </div>
-                        <a href="#" class="project-details">View Details →</a>
+                        <p class="project-description">
+                            Fully automated assembly line integrating industrial robots, vision systems for quality control, 
+                            and coordinated motion control. Achieved 99.5% quality rate and 35% throughput increase.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Siemens S7-1500</span>
+                            <span><i class="fas fa-circle"></i> Robotics</span>
+                            <span><i class="fas fa-circle"></i> Vision AI</span>
+                            <span><i class="fas fa-circle"></i> WinCC</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card glass-card" data-category="iot" data-aos="zoom-in" data-aos-delay="300">
                     <div class="project-image">
-                        <img src="images/projects/project3.jpg" alt="IIoT Dashboard">
+                        <img src="assets/img/projects/iiot-dashboard.jpg" alt="IIoT Dashboard">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Industrial IoT Dashboard</h3>
-                        <p>Real-time monitoring and analytics platform for manufacturing equipment</p>
-                        <div class="tech-tags">
-                            <span>OPC UA</span>
-                            <span>Python</span>
-                            <span>AWS IoT</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Industrial IoT Monitoring Dashboard</h3>
+                            <span class="project-category">Industrial IoT</span>
                         </div>
-                        <a href="#" class="project-details">View Details →</a>
+                        <p class="project-description">
+                            Real-time monitoring and predictive analytics platform for manufacturing equipment. 
+                            Integrated 50+ sensors using OPC UA, MQTT protocols with cloud-based analytics and mobile access.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> OPC UA</span>
+                            <span><i class="fas fa-circle"></i> Python</span>
+                            <span><i class="fas fa-circle"></i> AWS IoT</span>
+                            <span><i class="fas fa-circle"></i> React</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card glass-card" data-category="safety" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
-                        <img src="images/projects/project4.jpg" alt="Safety Sensor Integration">
+                        <img src="assets/img/projects/laser-scanner.jpg" alt="Safety Laser Scanner">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Safety Sensor Integration</h3>
-                        <p>Implementation of safety light curtains and laser scanners with diagnostic capabilities</p>
-                        <div class="tech-tags">
-                            <span>IEC 61496</span>
-                            <span>Safety Lasers</span>
-                            <span>Diagnostics</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Safety Laser Scanner Integration</h3>
+                            <span class="project-category">Safety Systems</span>
                         </div>
-                        <a href="#" class="project-details">View Details →</a>
+                        <p class="project-description">
+                            Implementation of safety laser scanners with configurable protection zones for AGV fleet. 
+                            Included muting functions and diagnostic capabilities per IEC 61496 standards.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> IEC 61496</span>
+                            <span><i class="fas fa-circle"></i> Safety Lasers</span>
+                            <span><i class="fas fa-circle"></i> Profisafe</span>
+                            <span><i class="fas fa-circle"></i> AGV</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-category="automation" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/img/projects/packaging.jpg" alt="Packaging System">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>High-Speed Packaging Automation</h3>
+                            <span class="project-category">Automation</span>
+                        </div>
+                        <p class="project-description">
+                            Servo-driven packaging line with integrated weighing, labeling, and palletizing. 
+                            Achieved 120 packages/minute with 99.8% accuracy using advanced motion control.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Motion Control</span>
+                            <span><i class="fas fa-circle"></i> Allen-Bradley</span>
+                            <span><i class="fas fa-circle"></i> Servo Systems</span>
+                            <span><i class="fas fa-circle"></i> FactoryTalk</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-category="iot" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/img/projects/predictive.jpg" alt="Predictive Maintenance">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Predictive Maintenance System</h3>
+                            <span class="project-category">Industrial IoT</span>
+                        </div>
+                        <p class="project-description">
+                            ML-based predictive maintenance system using vibration analysis and thermal imaging. 
+                            Reduced unplanned downtime by 60% through early fault detection and maintenance scheduling.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Machine Learning</span>
+                            <span><i class="fas fa-circle"></i> Python</span>
+                            <span><i class="fas fa-circle"></i> Edge Computing</span>
+                            <span><i class="fas fa-circle"></i> TensorFlow</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more" data-aos="fade-up">
+                <a href="https://github.com/anayghatpande" target="_blank" class="btn btn-primary">
+                    <span>View More on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section class="certifications section">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional qualifications and achievements</p>
+            </div>
+
             <div class="cert-grid">
-                <div class="cert-card">
-                    <i class="fas fa-certificate"></i>
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
                     <h3>Certified Functional Safety Expert</h3>
-                    <p>TÜV Rheinland</p>
+                    <p class="cert-issuer">TÜV Rheinland</p>
+                    <p class="cert-date">2022</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
                 </div>
-                <div class="cert-card">
-                    <i class="fas fa-certificate"></i>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
                     <h3>Certified Automation Professional (CAP)</h3>
-                    <p>ISA</p>
+                    <p class="cert-issuer">ISA (International Society of Automation)</p>
+                    <p class="cert-date">2021</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
                 </div>
-                <div class="cert-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Siemens TIA Portal Certified</h3>
-                    <p>Siemens</p>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Siemens TIA Portal Certified Professional</h3>
+                    <p class="cert-issuer">Siemens</p>
+                    <p class="cert-date">2021</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
                 </div>
-                <div class="cert-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Rockwell Automation Certified</h3>
-                    <p>Rockwell Automation</p>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Rockwell Automation Certified Programmer</h3>
+                    <p class="cert-issuer">Rockwell Automation</p>
+                    <p class="cert-date">2020</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>AWS Certified IoT Specialty</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">2023</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="600">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>CMSE - Certified Machinery Safety Expert</h3>
+                    <p class="cert-issuer">TÜV SÜD</p>
+                    <p class="cert-date">2022</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact section" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in discussing new projects, automation challenges, or opportunities to collaborate.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always interested in hearing about new projects, automation challenges, 
+                            or opportunities to collaborate. Whether you have a question or just want to say hi, 
+                            I'll try my best to get back to you!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:anay@example.com">anay@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (123) 456-7890</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Your City, Country</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/anayghatpande" target="_blank">
+                                        linkedin.com/in/anayghatpande
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (123) 456-7890</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Your City, Country</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/anayghatpande" target="_blank">linkedin.com/in/anayghatpande</a>
+
+                        <div class="social-links-contact">
+                            <a href="https://github.com/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:anay@example.com" class="social-btn">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Full Name
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -390,13 +996,78 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Anay Ghatpande. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Back to Top</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        Anay Ghatpande
+                        <span class="logo-bracket">/&gt;</span>
+                    </h3>
+                    <p>Automation Engineer specializing in Industrial Safety Systems and Smart Manufacturing Solutions.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/anayghatpande" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/anayghatpande" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:anay@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Safety System Design</a></li>
+                        <li><a href="#">PLC Programming</a></li>
+                        <li><a href="#">Industrial IoT</a></li>
+                        <li><a href="#">Automation Consulting</a></li>
+                        <li><a href="#">Risk Assessment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="assets/docs/resume.pdf" download>Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Anay Ghatpande. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
