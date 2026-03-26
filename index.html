@@ -3,83 +3,211 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anay Ghatpande | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>Anay Ghatpande | Robotics Engineer & Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="app-bar">
-    <div class="container">
-      <h1>Anay Ghatpande</h1>
-      <p class="subtitle">Software Engineer • Developer • AGV + MQTT + ROS2</p>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <span class="code-start">&lt;</span>AG<span class="code-end">/&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
-    <section class="card about-me">
-      <h2>About Me</h2>
-      <p>I’m a robotics + software enthusiast blending web tech, automation, and AGV systems. I work on MQTT, ROS2, Node-RED, and industrial integration using RevPi, Docker, and C#.</p>
-    </section>
-
-    <div class="card-grid">
-      <div class="card projects">
-        <h3 class="material-icons">build</h3>
-        <h4>Projects</h4>
-        <ul>
-          <li><strong>AGV Dashboard:</strong> Flask + MQTT + JS map</li>
-          <li><strong>ROS2 Bridge:</strong> Humble ↔ Node-RED</li>
-          <li><strong>Custom Nav Stack:</strong> TurtleBot3 + Gazebo</li>
-        </ul>
-      </div>
-      <div class="card experience">
-        <h3 class="material-icons">work</h3>
-        <h4>Work Experience</h4>
-        <p><strong>RevPi Integrations (2023 - Present)</strong></p>
-        <ul>
-          <li>Door control via MQTT I/O → AGV REST</li>
-          <li>Dockerized Node-RED pipelines (offline)</li>
-          <li>Automated WSL2 ROS2 setups</li>
-        </ul>
-      </div>
-      <div class="card skills">
-        <h3 class="material-icons">code</h3>
-        <h4>Skills</h4>
-        <div class="chips">
-          <span class="chip">Python</span>
-          <span class="chip">Docker</span>
-          <span class="chip">C#</span>
-          <span class="chip">Node-RED</span>
-          <span class="chip">ROS2</span>
-          <span class="chip">Ansible</span>
-          <span class="chip">Flask</span>
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Anay Ghatpande</h1>
+        <p class="hero-subtitle">Senior Development Engineer | Robotics & Automation Specialist</p>
+        <p class="hero-description">Architecting autonomous systems, intelligent robots, and industrial IoT solutions with expertise in ROS2, AI/ML, and embedded systems.</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary">View My Work</a>
         </div>
       </div>
     </div>
+  </header>
 
-    <section class="card contact">
-      <h2>Contact</h2>
-      <p><span class="material-icons">email</span> anay@example.com</p>
-      <p><span class="material-icons">link</span> <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">LinkedIn</a></p>
-      <p><span class="material-icons">code</span> <a href="https://github.com/anayghatpande" target="_blank">GitHub</a></p>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>I'm a passionate robotics engineer with a Master's in Automation & Robotics from TU Dortmund University. Currently, I lead software development for Autonomous Mobile Robots (AMR) and Collaborative Robots at Zimmer Group India.</p>
+          <p>My expertise spans across mobile robotics, ROS ecosystems, computer vision, industrial IoT (IIoT), and cognitive AI systems. I excel at transforming complex challenges into elegant, scalable solutions for manufacturing automation and warehouse logistics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Robotics & Automation</h3>
+            <div class="skill-tags">
+              <span class="tag">ROS 2</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">Navigation</span>
+              <span class="tag">Cobots</span>
+              <span class="tag">AMR Systems</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">C#</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MATLAB</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>AI & Computer Vision</h3>
+            <div class="skill-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">6D Pose Est.</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps & Tools</h3>
+            <div class="skill-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Git</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Gazebo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-badge">Robotics</div>
+            <h3>AMR Navigation System</h3>
+            <p>Complete autonomous mobile robot solution with adaptive SLAM, dynamic path planning, and fleet management for warehouse logistics.</p>
+            <div class="project-tech">
+              <span>ROS 2</span>
+              <span>C++</span>
+              <span>SLAM</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-badge">AI/ML</div>
+            <h3>6D Pose Estimation (DoPose)</h3>
+            <p>Deep learning-based system for accurate object pose estimation and segmentation, enabling precise robotic manipulation.</p>
+            <div class="project-tech">
+              <span>Deep Learning</span>
+              <span>Python</span>
+              <span>OpenCV</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-badge">IIoT</div>
+            <h3>Manufacturing Digital Twin</h3>
+            <p>Sensor fusion platform for real-time factory monitoring, predictive analytics, and Industry 4.0 integration.</p>
+            <div class="project-tech">
+              <span>Node-RED</span>
+              <span>IIoT</span>
+              <span>Sensor Fusion</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-badge">Robotics</div>
+            <h3>Collaborative Robot Control</h3>
+            <p>Advanced control algorithms for cobots with integrated safety features and intuitive human-robot interaction.</p>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Control Systems</span>
+              <span>Safety</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always interested in discussing robotics challenges, automation innovations, and collaboration opportunities.</p>
+        <div class="contact-grid">
+          <a href="mailto:anayghatpande@gmail.com" class="contact-card">
+            <span class="material-icons">email</span>
+            <h3>Email</h3>
+            <p>anayghatpande@gmail.com</p>
+          </a>
+          <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank" class="contact-card">
+            <span class="material-icons">person</span>
+            <h3>LinkedIn</h3>
+            <p>LinkedIn Profile</p>
+          </a>
+          <a href="https://github.com/anayghatpande" target="_blank" class="contact-card">
+            <span class="material-icons">code</span>
+            <h3>GitHub</h3>
+            <p>My Repositories</p>
+          </a>
+          <a href="https://gitlab.com/anayghatpande" target="_blank" class="contact-card">
+            <span class="material-icons">folder_special</span>
+            <h3>GitLab</h3>
+            <p>GitLab Projects</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 Anay Ghatpande</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>&lt;AG /&gt;</h4>
+          <p>Robotics Engineer & Developer</p>
+        </div>
+        <div class="footer-section">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Social</h5>
+          <ul>
+            <li><a href="https://github.com/anayghatpande" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://gitlab.com/anayghatpande" target="_blank">GitLab</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Anay Ghatpande. Crafted with <span class="heart">♥</span> | Senior Development Engineer - AMR</p>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.querySelectorAll('.card').forEach(card => {
-      card.classList.add('hidden');
-      const observer = new IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting) {
-          card.classList.add('show');
-          observer.disconnect();
-        }
-      });
-      observer.observe(card);
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
