@@ -1,213 +1,1538 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anay Ghatpande | Robotics Engineer & Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anay Ghatpande - Automation Engineer | Robotics Engineer | ROS Developer">
+    <meta name="keywords" content="Automation, Robotics, ROS, Industrial Safety, PLd Sensors, Embedded Systems, C++, Python, AI, Machine Learning">
+    <meta name="author" content="Anay Ghatpande">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Anay Ghatpande - Robotics Engineer Portfolio">
+    <meta property="og:description" content="Specialized in Industrial Safety Systems, PLd Sensors, and Automation">
+    <meta property="og:type" content="website">
+    
+    <title>Anay Ghatpande | Automation Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-brand">
-        <span class="code-start">&lt;</span>AG<span class="code-end">/&gt;</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
-  </nav>
 
-  <header class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Anay Ghatpande</h1>
-        <p class="hero-subtitle">Senior Development Engineer | Robotics & Automation Specialist</p>
-        <p class="hero-description">Architecting autonomous systems, intelligent robots, and industrial IoT solutions with expertise in ROS2, AI/ML, and embedded systems.</p>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="#projects" class="btn btn-secondary">View My Work</a>
-        </div>
-      </div>
-    </div>
-  </header>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <p>I'm a passionate robotics engineer with a Master's in Automation & Robotics from TU Dortmund University. Currently, I lead software development for Autonomous Mobile Robots (AMR) and Collaborative Robots at Zimmer Group India.</p>
-          <p>My expertise spans across mobile robotics, ROS ecosystems, computer vision, industrial IoT (IIoT), and cognitive AI systems. I excel at transforming complex challenges into elegant, scalable solutions for manufacturing automation and warehouse logistics.</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                AG
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <p class="hero-subtitle">Hi, I'm</p>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Anay Ghatpande</span>
+                </h1>
+                <div class="hero-description">
+                    <h2 class="typing-text">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+                </div>
+                <p class="hero-text">
+                    Senior Development Engineer specializing in <span class="highlight">Autonomous Mobile Robots</span>, 
+                    <span class="highlight">Collaborative Robots</span>, and <span class="highlight">Mobile Robotics Solutions</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/docs/resume.pdf" class="btn btn-secondary" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/anayghatpande" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:anayghatpande@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://gitlab.com/anayghatpande" target="_blank" class="social-link" aria-label="GitLab">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <img src="assets/img/profile.jpg" alt="Anay Ghatpande">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </section>
 
-    <section id="skills" class="section alt-bg">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Robotics & Automation</h3>
-            <div class="skill-tags">
-              <span class="tag">ROS 2</span>
-              <span class="tag">SLAM</span>
-              <span class="tag">Navigation</span>
-              <span class="tag">Cobots</span>
-              <span class="tag">AMR Systems</span>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
-          </div>
-          <div class="skill-card">
-            <h3>Programming Languages</h3>
-            <div class="skill-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Python</span>
-              <span class="tag">C#</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">MATLAB</span>
+
+            <div class="about-content">
+                <div class="about-info" data-aos="fade-right">
+                    <div class="about-card glass-card">
+                        <h3>Who am I?</h3>
+                        <p>
+                            Passionate about <strong>robotics</strong>, <strong>cognitive intelligence</strong>, and 
+                            <strong>embedded systems</strong>, I bring a wealth of expertise to the table. My proficiency 
+                            extends to <strong>mobile robots</strong>, <strong>ROS</strong>, and programming languages such 
+                            as <strong>C++</strong> and <strong>Python</strong>.
+                        </p>
+                        <p>
+                            Equipped with a solid foundation from <strong>TU Dortmund University</strong> (Master's in Automation 
+                            and Robotics), I thrive on addressing intricate engineering challenges to foster innovation in the field. 
+                            As a committed and dynamic Robotics Engineer, I am excited to harness my educational background and 
+                            professional experience to leave a lasting impact on the industry and contribute to the advancement of 
+                            cutting-edge technologies.
+                        </p>
+                        <p>
+                            Currently serving as <strong>Senior Development Engineer - AMR</strong> at Zimmer Group India, I specialize 
+                            in Autonomous Mobile Robots, AGVs, and Collaborative Robots.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="stat-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="6">0</h4>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="stat-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="8">0</h4>
+                                    <p>Companies Worked</p>
+                                </div>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="stat-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="5">0</h4>
+                                    <p>Certifications</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages Section -->
+                        <div class="languages-section" style="margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-color);">
+                                <i class="fas fa-language"></i> Languages
+                            </h4>
+                            <div class="tech-badges">
+                                <span class="tech-badge">English (Professional)</span>
+                                <span class="tech-badge">Marathi (Native)</span>
+                                <span class="tech-badge">Hindi (Native)</span>
+                                <span class="tech-badge">German (Professional)</span>
+                                <span class="tech-badge">Sanskrit (Elementary)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-interests" data-aos="fade-left">
+                    <div class="interests-grid">
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Mobile Robotics</h4>
+                            <p>AMR, AGV systems and autonomous navigation</p>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Cobots</h4>
+                            <p>Collaborative robotics and human-robot interaction</p>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>Embedded Systems</h4>
+                            <p>Real-time control and embedded programming</p>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <div class="interest-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Cognitive AI</h4>
+                            <p>Computer vision, deep learning, and AI integration</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="skill-card">
-            <h3>AI & Computer Vision</h3>
-            <div class="skill-tags">
-              <span class="tag">Deep Learning</span>
-              <span class="tag">OpenCV</span>
-              <span class="tag">6D Pose Est.</span>
-              <span class="tag">Generative AI</span>
-              <span class="tag">TensorFlow</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>DevOps & Tools</h3>
-            <div class="skill-tags">
-              <span class="tag">Docker</span>
-              <span class="tag">Git</span>
-              <span class="tag">CI/CD</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Gazebo</span>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-badge">Robotics</div>
-            <h3>AMR Navigation System</h3>
-            <p>Complete autonomous mobile robot solution with adaptive SLAM, dynamic path planning, and fleet management for warehouse logistics.</p>
-            <div class="project-tech">
-              <span>ROS 2</span>
-              <span>C++</span>
-              <span>SLAM</span>
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My technical expertise and proficiencies</p>
             </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-badge">AI/ML</div>
-            <h3>6D Pose Estimation (DoPose)</h3>
-            <p>Deep learning-based system for accurate object pose estimation and segmentation, enabling precise robotic manipulation.</p>
-            <div class="project-tech">
-              <span>Deep Learning</span>
-              <span>Python</span>
-              <span>OpenCV</span>
-            </div>
-          </div>
+            <div class="skills-wrapper">
+                <!-- Robotics & Automation -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-robot"></i>
+                        Robotics & Automation
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ROS (Robot Operating System)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Mobile Robots & AMR</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Collaborative Robots (Cobots)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AGV Systems</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Robotnik Robots</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="project-card">
-            <div class="project-badge">IIoT</div>
-            <h3>Manufacturing Digital Twin</h3>
-            <p>Sensor fusion platform for real-time factory monitoring, predictive analytics, and Industry 4.0 integration.</p>
-            <div class="project-tech">
-              <span>Node-RED</span>
-              <span>IIoT</span>
-              <span>Sensor Fusion</span>
-            </div>
-          </div>
+                <!-- Programming & Software -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming & Software Development
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node-RED</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitLab CI/CD</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Embedded Systems Programming</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="project-card">
-            <div class="project-badge">Robotics</div>
-            <h3>Collaborative Robot Control</h3>
-            <p>Advanced control algorithms for cobots with integrated safety features and intuitive human-robot interaction.</p>
-            <div class="project-tech">
-              <span>C++</span>
-              <span>Control Systems</span>
-              <span>Safety</span>
+                <!-- AI & Computer Vision -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        AI & Computer Vision
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Deep Learning</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">OpenCV</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">6D Pose Estimation</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Generative AI</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cognitive Intelligence</span>
+                                <span class="skill-percentage">83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IIoT & Industry 4.0 -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-industry"></i>
+                        IIoT & Industry 4.0
+                    </h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge"><i class="fas fa-network-wired"></i> Industrial IoT</span>
+                        <span class="tech-badge"><i class="fas fa-server"></i> Sensor Fusion</span>
+                        <span class="tech-badge"><i class="fas fa-cube"></i> Digital Twin</span>
+                        <span class="tech-badge"><i class="fas fa-warehouse"></i> Warehouse Automation</span>
+                        <span class="tech-badge"><i class="fas fa-chart-line"></i> Manufacturing Technology</span>
+                        <span class="tech-badge"><i class="fas fa-cogs"></i> CPPS (Cyber-Physical Production Systems)</span>
+                        <span class="tech-badge"><i class="fas fa-project-diagram"></i> Fleet Management</span>
+                        <span class="tech-badge"><i class="fas fa-box"></i> Inventory Tracking</span>
+                    </div>
+                </div>
+
+                <!-- Product Development -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="category-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Product Development & Design
+                    </h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge"><i class="fas fa-drafting-compass"></i> Product Development</span>
+                        <span class="tech-badge"><i class="fas fa-microchip"></i> PCB Design</span>
+                        <span class="tech-badge"><i class="fas fa-desktop"></i> GUI Development</span>
+                        <span class="tech-badge"><i class="fas fa-tools"></i> Prototyping</span>
+                        <span class="tech-badge"><i class="fas fa-flask"></i> R&D</span>
+                        <span class="tech-badge"><i class="fas fa-tasks"></i> Agile Development</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="section alt-bg">
-      <div class="container">
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">I'm always interested in discussing robotics challenges, automation innovations, and collaboration opportunities.</p>
-        <div class="contact-grid">
-          <a href="mailto:anayghatpande@gmail.com" class="contact-card">
-            <span class="material-icons">email</span>
-            <h3>Email</h3>
-            <p>anayghatpande@gmail.com</p>
-          </a>
-          <a href="https://www.linkedin.com/in/anayghatpande/" target="_blank" class="contact-card">
-            <span class="material-icons">person</span>
-            <h3>LinkedIn</h3>
-            <p>LinkedIn Profile</p>
-          </a>
-          <a href="https://github.com/anayghatpande" target="_blank" class="contact-card">
-            <span class="material-icons">code</span>
-            <h3>GitHub</h3>
-            <p>My Repositories</p>
-          </a>
-          <a href="https://gitlab.com/anayghatpande" target="_blank" class="contact-card">
-            <span class="material-icons">folder_special</span>
-            <h3>GitLab</h3>
-            <p>GitLab Projects</p>
-          </a>
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Zimmer Group - Senior Development Engineer -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Senior Development Engineer - AMR</h3>
+                            <span class="company">Zimmer Group India</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                April 2025 - Present
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Pune, Maharashtra, India
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Leading software development for Autonomous Mobile Robots (AMR) and AGV systems
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developing and implementing collaborative robot (Cobot) solutions for industrial automation
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Architecting mobile robotics software stack using ROS and modern C++ frameworks
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Integrating AI/ML algorithms for autonomous navigation and intelligent decision-making
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>AMR</span>
+                                <span>AGV</span>
+                                <span>Collaborative Robots</span>
+                                <span>ROS</span>
+                                <span>C++</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zimmer Group - Development Engineer -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Development Engineer - Autonomous Mobile Robots</h3>
+                            <span class="company">Zimmer Group India</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                September 2024 - March 2025 (7 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Pune, Maharashtra, India
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed autonomous navigation algorithms for mobile robot platforms
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Implemented sensor fusion techniques for robust localization and mapping
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Contributed to product development lifecycle from concept to deployment
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Mobile Robotics</span>
+                                <span>Navigation</span>
+                                <span>Sensor Fusion</span>
+                                <span>SLAM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEURA Robotics - Software Control Engineer -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Software Control Engineer</h3>
+                            <span class="company">NEURA Robotics</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                August 2023 - August 2024 (1 year 1 month)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bielefeld, North Rhine-Westphalia, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Designed and implemented control algorithms for collaborative robots
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed real-time embedded systems for robot control and safety
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Integrated cognitive AI features for human-robot interaction
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Collaborated with cross-functional teams on next-generation robotics platforms
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Control Systems</span>
+                                <span>Embedded Systems</span>
+                                <span>Cognitive AI</span>
+                                <span>C++</span>
+                                <span>Real-time Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEURA Robotics - Software Engineer -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">NEURA Robotics</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                April 2023 - August 2023 (5 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bielefeld, North Rhine-Westphalia, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Contributed to software development for collaborative automation systems
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Implemented vision-based control and manipulation algorithms
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed testing frameworks and CI/CD pipelines using GitLab
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Software Development</span>
+                                <span>Computer Vision</span>
+                                <span>GitLab</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEURA Robotics - Werkstudent -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Werkstudent in Collaborative Automation</h3>
+                            <span class="company">NEURA Robotics</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                December 2022 - April 2023 (5 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bielefeld, North Rhine-Westphalia, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Supported development of collaborative robot applications
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Conducted testing and validation of safety features
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Collaborative Robotics</span>
+                                <span>Testing</span>
+                                <span>Safety Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TU Dortmund - Research Assistant -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Research Assistant</h3>
+                            <span class="company">Chair of Material Handling and Warehousing, TU Dortmund</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                March 2021 - October 2022 (1 year 8 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dortmund, North Rhine-Westphalia, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Programmed and maintained Robotnik robots for Cyber-Physical Production Systems (CPPS) project
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Implemented logistical robotics solutions to enhance warehouse management efficiency
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Collaborated with multidisciplinary team to optimize robotic fleet operations
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Contributed to research that improved inventory tracking accuracy by 25%
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Robotnik Robots</span>
+                                <span>CPPS</span>
+                                <span>Warehouse Automation</span>
+                                <span>Fleet Management</span>
+                                <span>ROS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- q.beyond AG - Working Student -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Working Student in IIoT Bereich</h3>
+                            <span class="company">q.beyond AG</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                December 2020 - November 2021 (1 year)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Cologne, North Rhine-Westphalia, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Worked on Industrial IoT and Manufacturing Technology projects
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed sensor fusion solutions for Digital Twin design in manufacturing industries
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Implemented data acquisition and processing pipelines for real-time monitoring
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>IIoT</span>
+                                <span>Digital Twin</span>
+                                <span>Sensor Fusion</span>
+                                <span>Manufacturing Tech</span>
+                                <span>Node-RED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- camLine GmbH -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Werkstudent</h3>
+                            <span class="company">camLine GmbH</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                November 2020 - December 2020 (2 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Petershausen, Bavaria, Germany
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Contributed to manufacturing execution systems development
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Manufacturing</span>
+                                <span>Software Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IEEE -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Head Of Research</h3>
+                            <span class="company">IEEE - Ramrao Adik Institute of Technology</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                July 2017 - May 2018 (11 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Mumbai Area, India
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Managed hands-on workshops on PCB Designing and OpenCV
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Led research activities and technical workshops for IEEE student chapter
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Mentored students in robotics and embedded systems projects
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>PCB Design</span>
+                                <span>OpenCV</span>
+                                <span>Research</span>
+                                <span>Workshops</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BARC -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Project Trainee</h3>
+                            <span class="company">Bhabha Atomic Research Centre (BARC)</span>
+                            <span class="period">
+                                <i class="far fa-calendar"></i>
+                                December 2016 - January 2017 (2 months)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Mumbai, Maharashtra, India
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed Graphical User Interface (GUI) for a medical surgical tool
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Worked on real-time control systems for medical applications
+                                </li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>GUI Development</span>
+                                <span>Medical Devices</span>
+                                <span>Control Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>&lt;AG /&gt;</h4>
-          <p>Robotics Engineer & Developer</p>
-        </div>
-        <div class="footer-section">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h5>Social</h5>
-          <ul>
-            <li><a href="https://github.com/anayghatpande" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/anayghatpande/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://gitlab.com/anayghatpande" target="_blank">GitLab</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Anay Ghatpande. Crafted with <span class="heart">♥</span> | Senior Development Engineer - AMR</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Education Section (NEW) -->
+    <section class="education section" id="education" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background</p>
+            </div>
 
-  <script src="js/script.js"></script>
+            <div class="education-grid">
+                <div class="education-card glass-card" data-aos="fade-right">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Master of Science</h3>
+                        <h4>Automation and Robotics</h4>
+                        <p class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            TU Dortmund University
+                        </p>
+                        <p class="edu-period">
+                            <i class="far fa-calendar"></i>
+                            September 2018 - September 2022
+                        </p>
+                        <p class="edu-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Dortmund, Germany
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card" data-aos="fade-left">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Electrical and Electronics Engineering</h4>
+                        <p class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            Ramrao Adik Institute of Technology (RAIT)
+                        </p>
+                        <p class="edu-period">
+                            <i class="far fa-calendar"></i>
+                            2014 - 2018
+                        </p>
+                        <p class="edu-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Mumbai, India
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Patents Section (NEW) -->
+    <section class="publications section" id="publications">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Publications & Patents</h2>
+                <p class="section-subtitle">Research contributions and innovations</p>
+            </div>
+
+            <div class="pub-grid">
+                <!-- Publications -->
+                <div class="pub-category" data-aos="fade-up">
+                    <h3 class="pub-category-title">
+                        <i class="fas fa-file-alt"></i>
+                        Publications
+                    </h3>
+                    
+                    <div class="pub-item glass-card">
+                        <div class="pub-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="pub-content">
+                            <h4>DoPose: Dataset for Object Segmentation and 6D Pose Estimation</h4>
+                            <p class="pub-description">
+                                Comprehensive dataset for advanced computer vision applications including object 
+                                segmentation and 6-degree-of-freedom pose estimation for robotic manipulation tasks.
+                            </p>
+                            <div class="pub-tags">
+                                <span><i class="fas fa-tag"></i> Computer Vision</span>
+                                <span><i class="fas fa-tag"></i> 6D Pose Estimation</span>
+                                <span><i class="fas fa-tag"></i> Deep Learning</span>
+                                <span><i class="fas fa-tag"></i> Robotics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item glass-card">
+                        <div class="pub-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="pub-content">
+                            <h4>Closed Loop Control of Unstable Omni Directional Assisting System</h4>
+                            <p class="pub-description">
+                                Research on control algorithms for stabilizing omni-directional mobile platforms 
+                                with focus on assistive robotics applications.
+                            </p>
+                            <div class="pub-tags">
+                                <span><i class="fas fa-tag"></i> Control Systems</span>
+                                <span><i class="fas fa-tag"></i> Mobile Robotics</span>
+                                <span><i class="fas fa-tag"></i> Omni-directional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patents -->
+                <div class="pub-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="pub-category-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Patents
+                    </h3>
+                    
+                    <div class="pub-item glass-card patent">
+                        <div class="pub-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="pub-content">
+                            <h4>Earthquake Relief and Rescue Operation Robot</h4>
+                            <p class="pub-description">
+                                Innovative robotic system designed for disaster response scenarios, featuring 
+                                autonomous navigation in challenging terrain and victim detection capabilities.
+                            </p>
+                            <div class="pub-tags">
+                                <span><i class="fas fa-tag"></i> Disaster Response</span>
+                                <span><i class="fas fa-tag"></i> Autonomous Systems</span>
+                                <span><i class="fas fa-tag"></i> Rescue Robotics</span>
+                            </div>
+                            <div class="patent-badge">
+                                <i class="fas fa-award"></i> Patent Filed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Honors Section -->
+    <section class="certifications section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Certifications & Honors</h2>
+                <p class="section-subtitle">Professional qualifications and achievements</p>
+            </div>
+
+            <!-- Certifications -->
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);" data-aos="fade-up">
+                <i class="fas fa-certificate"></i> Certifications
+            </h3>
+            <div class="cert-grid">
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Generative AI Mastermind</h3>
+                    <p class="cert-issuer">Professional Certification</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <p class="cert-issuer">Professional Certification</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Avishkar Competition</h3>
+                    <p class="cert-issuer">Innovation Challenge</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+            </div>
+
+            <!-- Honors & Awards -->
+            <h3 style="text-align: center; margin: 4rem 0 2rem; color: var(--accent-color);" data-aos="fade-up">
+                <i class="fas fa-award"></i> Honors & Awards
+            </h3>
+            <div class="awards-grid" data-aos="fade-up">
+                <div class="award-card glass-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>e-Yantra Ideas Competition 2017</h4>
+                        <p class="award-issuer">
+                            <i class="fas fa-building"></i>
+                            IIT Bombay - e-Yantra Robotics Competition
+                        </p>
+                        <p class="award-description">
+                            Recognized for innovative robotics solution in national-level competition 
+                            organized by IIT Bombay's e-Yantra initiative
+                        </p>
+                        <div class="award-year">2017</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my notable work</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="iot">IIoT</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: AMR System -->
+                <div class="project-card glass-card" data-category="robotics" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/img/projects/amr-system.jpg" alt="AMR System" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/anayghatpande" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Autonomous Mobile Robot Navigation System</h3>
+                            <span class="project-category">Robotics</span>
+                        </div>
+                        <p class="project-description">
+                            Complete AMR solution with autonomous navigation, obstacle avoidance, and fleet management 
+                            capabilities for warehouse automation.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> ROS</span>
+                            <span><i class="fas fa-circle"></i> C++</span>
+                            <span><i class="fas fa-circle"></i> SLAM</span>
+                            <span><i class="fas fa-circle"></i> Navigation</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: 6D Pose Estimation -->
+                <div class="project-card glass-card" data-category="ai" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/img/projects/dopose.jpg" alt="DoPose Dataset" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>DoPose: 6D Object Pose Estimation</h3>
+                            <span class="project-category">AI/ML</span>
+                        </div>
+                        <p class="project-description">
+                            Deep learning-based system for accurate 6D pose estimation and object segmentation 
+                            for robotic manipulation tasks.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Deep Learning</span>
+                            <span><i class="fas fa-circle"></i> OpenCV</span>
+                            <span><i class="fas fa-circle"></i> Python</span>
+                            <span><i class="fas fa-circle"></i> Computer Vision</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Digital Twin -->
+                <div class="project-card glass-card" data-category="iot" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/img/projects/digital-twin.jpg" alt="Digital Twin" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Manufacturing Digital Twin Platform</h3>
+                            <span class="project-category">IIoT</span>
+                        </div>
+                        <p class="project-description">
+                            Sensor fusion-based digital twin solution for real-time monitoring and predictive 
+                            analytics in manufacturing environments.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> IIoT</span>
+                            <span><i class="fas fa-circle"></i> Node-RED</span>
+                            <span><i class="fas fa-circle"></i> Sensor Fusion</span>
+                            <span><i class="fas fa-circle"></i> Digital Twin</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Cobot Control -->
+                <div class="project-card glass-card" data-category="robotics" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/img/projects/cobot.jpg" alt="Collaborative Robot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-gitlab"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Collaborative Robot Control System</h3>
+                            <span class="project-category">Robotics</span>
+                        </div>
+                        <p class="project-description">
+                            Advanced control algorithms for collaborative robots with integrated safety features 
+                            and human-robot interaction capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Cobots</span>
+                            <span><i class="fas fa-circle"></i> Control Systems</span>
+                            <span><i class="fas fa-circle"></i> C++</span>
+                            <span><i class="fas fa-circle"></i> Safety</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: CPPS Fleet -->
+                <div class="project-card glass-card" data-category="robotics" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/img/projects/cpps-fleet.jpg" alt="CPPS Fleet Management" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>CPPS Robotic Fleet Management</h3>
+                            <span class="project-category">Robotics</span>
+                        </div>
+                        <p class="project-description">
+                            Multi-robot coordination system for warehouse logistics achieving 25% improvement 
+                            in inventory tracking accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Robotnik</span>
+                            <span><i class="fas fa-circle"></i> Fleet Management</span>
+                            <span><i class="fas fa-circle"></i> CPPS</span>
+                            <span><i class="fas fa-circle"></i> Logistics</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Earthquake Robot -->
+                <div class="project-card glass-card" data-category="robotics" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/img/projects/rescue-robot.jpg" alt="Rescue Robot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Earthquake Relief & Rescue Robot</h3>
+                            <span class="project-category">Robotics</span>
+                        </div>
+                        <p class="project-description">
+                            Patented disaster response robot with autonomous terrain navigation and victim 
+                            detection for earthquake relief operations.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-circle"></i> Rescue Robotics</span>
+                            <span><i class="fas fa-circle"></i> Autonomous</span>
+                            <span><i class="fas fa-circle"></i> Sensors</span>
+                            <span><i class="fas fa-circle"></i> Patent</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more" data-aos="fade-up">
+                <a href="https://github.com/anayghatpande" target="_blank" class="btn btn-primary">
+                    <span>View More on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://gitlab.com/anayghatpande" target="_blank" class="btn btn-secondary">
+                    <span>View More on GitLab</span>
+                    <i class="fab fa-gitlab"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next robotics project</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always interested in hearing about new robotics projects, automation challenges, 
+                            or opportunities to collaborate on cutting-edge technologies. Whether you have a question 
+                            or just want to connect, feel free to reach out!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:anayghatpande@gmail.com">anayghatpande@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Mumbai, Maharashtra, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/anayghatpande" target="_blank">
+                                        linkedin.com/in/anayghatpande
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/anayghatpande" target="_blank">
+                                        github.com/anayghatpande
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <a href="https://github.com/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://gitlab.com/anayghatpande" target="_blank" class="social-btn">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                            <a href="mailto:anayghatpande@gmail.com" class="social-btn">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Full Name
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        Anay Ghatpande
+                        <span class="logo-bracket">/&gt;</span>
+                    </h3>
+                    <p>Senior Development Engineer specializing in Autonomous Mobile Robots, Collaborative Robots, and Smart Manufacturing Solutions.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/anayghatpande" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anayghatpande" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://gitlab.com/anayghatpande" target="_blank" aria-label="GitLab">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                        <a href="mailto:anayghatpande@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Expertise</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mobile Robotics</a></li>
+                        <li><a href="#">Collaborative Robots</a></li>
+                        <li><a href="#">ROS Development</a></li>
+                        <li><a href="#">Industrial IoT</a></li>
+                        <li><a href="#">Computer Vision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="https://github.com/anayghatpande" target="_blank">GitHub</a></li>
+                        <li><a href="https://gitlab.com/anayghatpande" target="_blank">GitLab</a></li>
+                        <li><a href="assets/docs/resume.pdf" download>Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Anay Ghatpande. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> | Senior Development Engineer - AMR</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
